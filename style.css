@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* applying linear gradient */
+body{
+    background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.formwrapper{
+    margin-top: 10%;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(24 40 72 / 74%) 1px 17px 65px 19px, rgb(24 40 72 / 58%) 0px 0px 44px 6px;
+    border-radius: 5px;
+    border: 5px solid #182848;
+    /* display: none; */
+
+}
+h3{
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.sub-btn{
+    background-color: #4b6cb7;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 2vw;
+    border: none;
+}
+
+/* working on strat section */
+.start{
+    display: none;
+    margin-top: 8%;
+    width: 50%;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(24 40 72 / 74%) 1px 17px 65px 19px, rgb(24 40 72 / 58%) 0px 0px 44px 6px;
+    border-radius: 5px;
+    border: 5px solid #182848;
+}
+.icn{
+    height: 25%;
+    /* border: 2px solid red; */
+    width: 50%;
+}
+.img2{
+    height: 50%;
+    width: 100%;
+}
+.btn2{
+    border: none;
+    background-color: #4b6cb7;
+    font-size: 2vw;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+}
+
+/* working on quzbody section*/
+.quizbody{
+    display: none;
+    margin-top: 10%;
+    width: 60%;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(24 40 72 / 74%) 1px 17px 65px 19px, rgb(24 40 72 / 58%) 0px 0px 44px 6px;
+    border-radius: 5px;
+    border: 5px solid #182848;
+}
+
+.main-header{
+    /* border: 2px solid #5aa6eb; */
+    justify-content: space-evenly;
+}
+.main-con p{
+    color: white;
+}
+.main-footer{
+    justify-content: space-between;
+    border: 2px solid #0e6d99;
+}
+.btn3{
+    height: 50px ;
+    border: none;
+    background-color: #4b6cb7;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6vw;
+    border: none;
+    font-weight: bold;
+    margin-right: 4%;
+    width: 200px;
+}
+.conter{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+
+#para_name{
+    color: white;
+}
+
+/* set question and options style */
+#ques{
+    color: white;
+    font-size: 2.4vw;
+    font-weight: bold;
+}
+#opt{
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#opt li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+.disableli{
+    pointer-events: none;
+}
+.correctAns{
+    border: 1px solid green;
+    color: green;
+}
+.wrongAns{
+    border: 1px solid red;
+    color: red;
+}
+
+/* working on result section */
+.result{
+    display: none;
+}
+
+/* progress bar */
+.container{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #4b6cb7;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(24 40 72 / 74%) 1px 17px 65px 19px, rgb(24 40 72 / 58%) 0px 0px 44px 6px;
+    
+    border: 5px solid #182848;
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#0e6d99 3.6deg, #182848 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(24 40 72 / 74%) 1px 17px 65px 19px, rgb(24 40 72 / 58%) 0px 0px 44px 6px;
+    
+    border: 5px solid #182848;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: #0e6d99;
+}
+.text{
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: white;
+}
+
+/* applying media query min width 400px for responsive */
+@media screen and (max-width: 480px) {
+    .start{
+        margin-top: 30%;
+        width: 75%;
+    }
+    .btn2{
+        font-size: 4vw;
+    }
+    .quizbody{
+        width: 75%;
+        margin-top: 30%;
+    }
+    .btn3{
+        height: 35px;
+        width: 80px;
+        font-size: 2vw;
+        border: none;
+        border-radius: 5px;
+    }
+    #opt{
+        font-size: 3.6vw;
+    }
+    #ques{
+        font-size: 4vw;
+    }
+    .container{
+        width: 140%;
+    }
+    .circular-progress{
+        width: 210px;
+    }
+    .progress-value{
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    .circular-progress::before{
+        content: "";
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .text{
+        font-size: 4.2vw;
+        font-weight: bold;
+    }
+  }
